@@ -1,48 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Tabel Perbandingan Item</title>
+    <title>Grafik Berbasis Tabel</title>
 </head>
+<!-- Membuat Grafik Berbasis Tabel -->
 <body>
+<!-- Menentukan garis tepi dan spasi -->
 <table border=1 cellspacing=0 cellpadding=5>
+    <!-- Menambahkan caption/judul di atas tabel -->
     <caption>PERBANDINGAN FITUR</caption>
     <tr>
-        <th>No</th>
+        <th width="50">No</th>
         <th>Fitur</th>
         <th>Enterprise</th>
-        <th>Pro</th>
-        <th>Free</th>
+        <!-- Gabung kolom Pro dan Free -->
+        <th width="80" colspan=2>Pro Free</th>
     </tr>
     <tr>
-        <td>1</td>
+        <!-- Gabung baris 2 - 6 -->
+        <td rowspan=6>
+            1 
+            <br />
+            <br />
+            2 
+            <br />
+            <br />
+            3 
+            <br />
+            <br />
+            4 
+            <br />
+            <br />
+            5</td>
+    </tr>
+    <tr>
         <td>Garansi seumur hidup</td>
         <td>X</td>
         <td>-</td>
         <td>-</td>
     </tr>
     <tr>
-        <td>2</td>
+        
         <td>Multiuser</td>
         <td>X</td>
         <td>-</td>
         <td>-</td>
     </tr>
     <tr>
-        <td>3</td>
+        
         <td>Update otomatis</td>
         <td>X</td>
         <td>X</td>
         <td>-</td>
     </tr>
     <tr>
-        <td>4</td>
+        
         <td>Cetak laporan</td>
         <td>X</td>
         <td>X</td>
         <td>-</td>
     </tr>
     <tr>
-        <td>5</td>
         <td>Notifikasi error</td>
         <td>X</td>
         <td>X</td>
@@ -51,13 +69,6 @@
     <tr>
         <td>6</td>
         <td>Ubah tema</td>
-        <td>X</td>
-        <td>X</td>
-        <td>X</td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td>Try ikon</td>
         <td>X</td>
         <td>X</td>
         <td>X</td>
