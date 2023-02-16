@@ -3,82 +3,97 @@
 <head>
     <title>Grafik Berbasis Tabel</title>
 </head>
+
 <!-- Membuat Grafik Berbasis Tabel -->
 <body>
-<!-- Menentukan garis tepi dan spasi -->
-<table border=1 cellspacing=0 cellpadding=5>
-    <!-- Menambahkan caption/judul di atas tabel -->
-    <caption>PERBANDINGAN FITUR</caption>
+
+<!-- Menentukan ukuran dan garis tepi tabel -->
+<table width="470" height="200" border="0">
+
+    <!-- Mengatur penggabungan kolom dan garis tepi tengah tebal serta menambahkan judul di atas tabel -->
     <tr>
-        <th width="50">No</th>
-        <th>Fitur</th>
-        <th>Enterprise</th>
-        <!-- Gabung kolom Pro dan Free -->
-        <th width="80" colspan=2>Pro Free</th>
+        <td colspan="8" style="border-bottom:#000000 solid;"><caption>PERBANDINGAN FITUR</caption> </td>
     </tr>
     <tr>
-        <!-- Gabung baris 2 - 6 -->
-        <td rowspan=6>
-            1 
-            <br />
-            <br />
-            2 
-            <br />
-            <br />
-            3 
-            <br />
-            <br />
-            4 
-            <br />
-            <br />
-            5</td>
+        <!-- Mengatur ukuran, posisi, huruf tebal pada table heading -->
+        <td width="31"align="center"><b>No</b></td>
+        <!-- Mengatur lebar, penggabungan baris, garis tepi kanan tipis -->
+        <td width="0" rowspan="10" style="border-left:#000000 solid thin;">&nbsp;</td>
+        <td width="208" align="center"><b>Fitur</b></td>
+        <td rowspan="10" style="border-left:#000000 solid thin;padding-left:-5px;" width="0">&nbsp;</td>
+        <td width="92" align="center"><b>Enterprise</b></td>
+        <td width="0" rowspan="10" style="border-left:#000000 solid thin;">&nbsp;</td>
+        <td width="0"align="center"><b>Pro</b></td>
+        <td width="0"align="center"><b>Free</b></td>
+    </tr>
+
+    <!-- Mengatur penggabungan kolom, garis tepi atas tipis -->
+    <tr>
+        <td colspan="8" style="border-top:#000000 solid thin;"></td>
     </tr>
     <tr>
-        <td>Garansi seumur hidup</td>
-        <td>X</td>
-        <td>-</td>
-        <td>-</td>
+        <!-- Menambah dan mengatur posisi table data -->
+        <td align="center">1</td>
+        <td>Garansi seumur hidup </td>
+        <td align="center">X</td>
+        <td align="center">-</td>
+        <td align="center">-</td>
     </tr>
     <tr>
-        
+        <!-- Menambah dan mengatur posisi table data -->
+        <td align="center">2</td>
         <td>Multiuser</td>
-        <td>X</td>
-        <td>-</td>
-        <td>-</td>
+        <td align="center">X</td>
+        <td align="center">-</td>
+        <td align="center">-</td>
     </tr>
     <tr>
-        
-        <td>Update otomatis</td>
-        <td>X</td>
-        <td>X</td>
-        <td>-</td>
+        <!-- Menambah dan mengatur posisi table data -->
+        <td align="center">3</td>
+        <td>Update otomatis </td>
+        <td align="center">X</td>
+        <td align="center">X</td>
+        <td align="center">-</td>
     </tr>
     <tr>
-        
-        <td>Cetak laporan</td>
-        <td>X</td>
-        <td>X</td>
-        <td>-</td>
+        <!-- Menambah dan mengatur posisi table data -->
+        <td align="center">4</td>
+        <td>Cetak Laporan </td>
+        <td align="center">X</td>
+        <td align="center">X</td>
+        <td align="center">-</td>
     </tr>
     <tr>
-        <td>Notifikasi error</td>
-        <td>X</td>
-        <td>X</td>
-        <td>X</td>
+        <!-- Menambah dan mengatur posisi table data -->
+        <td align="center">5</td>
+        <td>Notifikasi error </td>
+        <td align="center">X</td>
+        <td align="center">X</td>
+        <td align="center">X</td>
     </tr>
     <tr>
-        <td>6</td>
-        <td>Ubah tema</td>
-        <td>X</td>
-        <td>X</td>
-        <td>X</td>
+        <!-- Mengatur penggabungan kolom, garis tepi atas tipis -->
+        <td colspan="8" style="border-top:#000000 solid thin;"></td>
     </tr>
     <tr>
-        <td>7</td>
+        <!-- Menambah dan mengatur posisi table data -->
+        <td align="center">6</td>
+        <td>Ubah tema </td>
+        <td align="center">X</td>
+        <td align="center">X</td>
+        <td align="center">X</td>
+    </tr>
+    <tr>
+        <!-- Menambah dan mengatur posisi table data -->
+        <td align="center">7</td>
         <td>Try ikon</td>
-        <td>X</td>
-        <td>X</td>
-        <td>X</td>
+        <td align="center">X</td>
+        <td align="center">X</td>
+        <td align="center">X</td>
+    </tr>
+    <tr>
+        <!-- Mengatur penggabungan kolom, garis tepi atas tipis -->
+        <td colspan="8" style="border-top:#000000 solid thin;"></td>
     </tr>
 </table>
 </body>
