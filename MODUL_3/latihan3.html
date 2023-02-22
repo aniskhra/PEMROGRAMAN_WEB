@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+</head>
+<!-- Membuat form -->
+<body>
+    <form action="" method="post">
+    <!-- Mengatur garis tepi -->
+    <table border=0>
+        <!-- Data pertama -->
+        <tr>
+            <td>Nama Lengkap:</td>
+            <!-- Menambahkan keterangan pada input, mengatur ukuran form dan menambahkan validasi (form wajib diisi) -->
+            <td><input type="text" name="nama" placeholder="Masukkan Nama Lengkap Anda" size="30" required /></td>
+        </tr>
+        <!-- Data kedua -->
+        <tr>
+            <td>Username:</td>
+            <td><input type="text" name="username" placeholder="Masukkan Username" size="30" required /></td>
+        </tr>
+        <!-- Data ketiga -->
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" name="password" placeholder="Masukkan Password" size="30" required /></td>
+        </tr>
+        <!-- Data keempat -->
+        <tr>
+            <td>Tanggal Lahir:</td>
+            <td><input type="date" name="birth" size="30" required /></td>
+        </tr>
+        <!-- Data kelima -->
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" name="email" placeholder="Masukkan Alamat E-mail Anda" size="30" required /></td>
+        </tr>
+        <!-- Data keenam -->
+        <tr>
+            <td>Telepon:</td>
+            <td><input type="text" name="tel" placeholder="Masukkan Nomor Telepon Anda" maxlength="13" size="30" required /></td>
+        </tr>
+        <!-- Submit semua data -->
+        <tr>
+            <td>
+            <td><input type="submit" value="Buat Akun Saya" />
+            </td>
+        </tr>
+        </table>
+    </form>
+</body>
+</html>

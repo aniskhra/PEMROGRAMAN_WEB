@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+</head>
+<h3>Studi Kasus: Validasi Input HTML5</h3>
+<!-- Membuat form -->
+<body>
+    <form action="" method="post">
+    <!-- Mengatur garis tepi -->
+    <table border=0>
+        <!-- Data pertama -->
+        <tr>
+            <td>Nama</td>
+            <td>: <input type="text" name="nama" placeholder="Isikan Nama Anda" size="25" required /></td>
+        </tr>
+        <!-- Data kedua -->
+        <tr>
+            <td>Usia</td>
+            <td>: <input type="text" name="usia" size="5" required /> (Usia min 17-30)</td>
+        </tr>
+        <!-- Data ketiga -->
+        <tr>
+            <td>Email</td>
+            <td>: <input type="email" name="email" placeholder="nama.email@host.com" size="25" required /></td>
+        </tr>
+        <!-- Data keempat -->
+         <tr>
+            <td>Web</td>
+            <td>: <input type="text" name="birth" placeholder="http://" size="32" required /></td>
+        </tr>
+         <!-- Data kelima -->
+        <tr>
+            <td>Password</td>
+            <td>: <input type="password" name="password" placeholder="Semua karakter, min 8" minlength="8" size="17" required /></td>
+        </tr>
+        <!-- Submit semua data -->
+        <tr>
+            <td>
+            <td><input type="submit" value="Submit"/>
+            </td>
+        </tr>
+        </table>
+    </form>
+</body>
+</html>
