@@ -28,20 +28,24 @@
         <!-- Data keempat -->
         <tr>
             <td>Tanggal Lahir:</td>
+            <!-- Menambahkan input berupa date, mengatur ukuran form dan menambahkan validasi (form wajib diisi) -->
             <td><input type="date" name="birth" size="30" required /></td>
         </tr>
         <!-- Data kelima -->
         <tr>
             <td>Email:</td>
+            <!-- Menambahkan input berupa email, mengatur ukuran form dan menambahkan validasi (form wajib diisi) -->
             <td><input type="email" name="email" placeholder="Masukkan Alamat E-mail Anda" size="30" required /></td>
         </tr>
         <!-- Data keenam -->
         <tr>
             <td>Telepon:</td>
-            <td><input type="text" name="tel" placeholder="Masukkan Nomor Telepon Anda" maxlength="13" size="30" required /></td>
+            <!-- Mengatur angka maksimal yang dapat diinput, mengatur ukuran form dan menambahkan validasi (form wajib diisi) -->
+            <td><input type="tel" name="tel" placeholder="Masukkan Nomor Telepon Anda" maxlength="13" size="30" required /></td>
         </tr>
-        <!-- Submit semua data -->
+        <!-- Submit semua data yang telah diinput -->
         <tr>
+            <!-- Menambahkan double <td> untuk mensejajarkan tombol submit dengan form -->
             <td>
             <td><input type="submit" value="Buat Akun Saya" />
             </td>
