@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Form</title>
+    <!-- Membuat judul dokumen -->
+    <title>Studi Kasus Form</title>
 </head>
+<!-- Membuat heading/judul di atas form -->
 <h3>Studi Kasus: Validasi Input HTML5</h3>
 <!-- Membuat form -->
 <body>
@@ -12,31 +14,31 @@
         <!-- Data pertama -->
         <tr>
             <td>Nama</td>
-            <!-- Mengatur tipe input berupa text dengan keterangan, hanya bisa mengisi huruf dan spasi, ukuran dan validasi form -->
+            <!-- Mengatur tipe input berupa text dengan keterangan, hanya bisa mengisi huruf dan spasi, ukuran dan validasi input -->
             <td>: <input type="text" name="nama" placeholder="Isikan Nama Anda" pattern="[a-zA-Z\s]+" size="25" required /></td>
         </tr>
         <!-- Data kedua -->
         <tr>
             <td>Usia</td>
-            <!-- Mengatur tipe input berupa number dengan minimal dan maksimal angka yang dapat diinput, ukuran dan validasi form -->
+            <!-- Mengatur tipe input berupa number dengan minimal dan maksimal angka yang dapat diinput, ukuran dan validasi input -->
             <td>: <input type="number" name="usia" min="17" max="30" size="10" required /> (Usia min 17-30)</td>
         </tr>
         <!-- Data ketiga -->
         <tr>
             <td>Email</td>
-            <!-- Mengatur tipe input email agar hanya bisa diisi email dengan keterangan, ukuran dan validasi form -->
+            <!-- Mengatur tipe input email agar hanya bisa diisi email dengan keterangan, ukuran dan validasi input -->
             <td>: <input type="email" name="email" placeholder="nama.email@host.com" size="25" required /></td>
         </tr>
         <!-- Data keempat -->
          <tr>
             <td>Web</td>
-            <!-- Mengatur tipe input url dengan keterangan (hanya bisa diisi url web), ukuran dan validasi form -->
+            <!-- Mengatur tipe input url dengan keterangan (hanya bisa diisi url web), ukuran dan validasi input -->
             <td>: <input type="url" name="web" placeholder="http://" size="32" required /></td>
         </tr>
          <!-- Data kelima -->
         <tr>
             <td>Password</td>
-            <!-- Mengatur tipe input berupa password dengan keterangan minimal 8 karakter, ukuran dan validasi form -->
+            <!-- Mengatur tipe input berupa password dengan keterangan minimal 8 karakter, ukuran dan validasi input -->
             <td>: <input type="password" name="password" placeholder="Semua karakter, min 8" minlength="8" size="17" required /><i><b> (Bonus)</b></i></td>
         </tr>
         <!-- Submit semua data -->
