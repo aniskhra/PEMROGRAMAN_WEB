@@ -1,0 +1,30 @@
+.round{
+    text-align: center;
+    background-color: #ddccb5;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border: 2px solid #897048;
+    width: 200px;
+    height: 200px;
+}
+
+.bubblechat{
+    text-align: left;
+    padding : 15px;
+    border : 2px solid green;
+    width : 450px;
+    height : 50px;
+    background: white;
+    border-bottom-right-radius : 31px;
+    border-top-left-radius : 31px;
+}
+    
+.shadow{
+    text-align: left;
+    padding : 15px;
+    border : 2px solid #cbcbc7;
+    -moz-box-shadow: 0 10px 16px rgba(191, 195, 199, 0.5), inset 0 -25px 20px -10px rgb(40, 44, 49);
+    -webkit-box-shadow : 5px 5px 3px rgba(130, 116, 116, 0.5);
+    width : 500px;
+    height : 50px;
+}
