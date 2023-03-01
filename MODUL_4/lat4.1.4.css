@@ -1,8 +1,10 @@
+/* Mengatur warna dan font pada class */
 .style1 {
     color: red;
     font-style: italic;
 }
 
+/* Mengatur warna dan font pada id */
 #style2 {
     color: blue;
     font-weight: bold;

@@ -1,3 +1,4 @@
+/* Mengatur atribut pada class */
 .round{
     text-align: center;
     background-color: #ddccb5;
@@ -8,6 +9,7 @@
     height: 200px;
 }
 
+/* Mengatur atribut pada class */
 .bubblechat{
     text-align: left;
     padding : 15px;
@@ -18,7 +20,8 @@
     border-bottom-right-radius : 31px;
     border-top-left-radius : 31px;
 }
-    
+
+/* Mengatur atribut pada class */
 .shadow{
     text-align: left;
     padding : 15px;
