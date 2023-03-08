@@ -1,31 +1,36 @@
+/* Mengatur margin dan lebar pada body */
 body {
     margin: 10px auto;
     width: 750px;
-    }
+}
 
-    header,nav,section,footer {
+/* Mengatur tampilan, ukuran dan warna garis tepi pada header, nav, section, dan footer */
+header,nav,section,footer {
     display:block;
     border:1px solid blue;
-    }
+}
 
-    header{
+/* Mengatur tinggi pada header */
+header{
     height:80px;
-    }
+}
 
-    nav{
+/* Mengatur letak, lebar, dan tinggi pada nav */
+nav{
     float:left;
     width:200px;
     height:370px;
-    }
+}
 
-    section{
+/* Mengatur margin kiri, lebar, dan tinggi pada section */
+section{
     margin-left:200px;
     width:500;
     height:370px;
-    }
-    
-    footer{
+}
+
+/* Menghapus kedua float dan mengatur tinggi pada footer */
+footer{
     clear:both;
     height:20px;
-    }
-    
+} 

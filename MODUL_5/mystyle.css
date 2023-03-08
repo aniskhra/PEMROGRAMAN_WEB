@@ -1,37 +1,43 @@
+/* Mengatur margin, lebar, ukuran dan warna garis tepi pada id wrapper */
 #wrapper {
-margin: auto;
-width: 750px;
-border: 1px solid red;
+    margin: auto;
+    width: 750px;
+    border: 1px solid red;
 }
 
+/* Mengatur tinggi, ukuran dan warna garis tepi pada id header */
 #header {
-height: 80px;
-border: 1px solid blue;
+    height: 80px;
+    border: 1px solid blue;
 }
 
+/* Mengatur letak, margin, ukuran dan warna garis tepi pada id inner */
 #inner {
-float: left;
-margin: 5px 0;
-border: 1px solid black;
+    float: left;
+    margin: 5px 0;
+    border: 1px solid black;
 }
 
+/* Mengatur letak, margin kanan, lebar, tinggi, ukuran dan warna garis tepi pada id sidebar */
 #sidebar {
-float: left;
-margin-right: 20px;
-width: 180px;
-height: 330px;
-border: 1px solid red;
+    float: left;
+    margin-right: 20px;
+    width: 180px;
+    height: 330px;
+    border: 1px solid red;
 }
 
+/* Mengatur letak, margin, lebar, ukuran dan warna garis tepi pada id content */
 #content {
-float: left;
-width: 544px;
-height: 330px;
-border: 1px solid green;
+    float: left;
+    width: 544px;
+    height: 330px;
+    border: 1px solid green;
 }
 
+/* Menghapus kedua float, mengatur tinggi, ukuran dan warna garis tepi pada id footer */
 #footer {
-clear: both;
-height: 50px;
-border: 1px solid blue;
+    clear: both;
+    height: 50px;
+    border: 1px solid blue;
 }
