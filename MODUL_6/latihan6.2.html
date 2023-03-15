@@ -8,24 +8,25 @@
     
     <!-- Menambahkan style -->
     <style>
+        /* Mengatur margin dan lebar pada id wrapper */
         #wrapper {
             margin: auto;
             width: 100%;
         }
- 
+        /* Mengatur tinggi, padding dan garis tepi pada id header */
         #header {
             height: 150px;
             padding: 20px;
             border: 2px solid red;
         }
- 
+        /* Mengatur margin, padding, tinggi dan garis tepi pada id nav */
         #nav {
             margin: auto;
             padding: 20px;
             height: 200px;
             border: 2px solid red;
         }
- 
+        /* Mengatur letak, lebar, margin, tinggi, warna background dan garis tepi pada class box */
         .box {
             float: left;
             width: 22%;
@@ -34,54 +35,58 @@
             background: red;
             border: 2px solid red;
         }
- 
+        /* Mengatur padding, tinggi dan garis tepi pada id footer */
         #footer {
             padding: 20px;
             height: 120px;
             border: 2px solid red;
         }
- 
-        /** Responsif tablet **/
+        
+        /* Responsif tablet */
         @media only screen and (max-width: 768px) {
+            /* Mengatur tinggi pada id nav */
             #nav {
                 height: 360px;
             }
  
-        /** atur box 2 kolom **/
+        /* Atur lebar dan margin box 2 kolom */
         .box {
             width: 45%;
             margin: 0 4% 20px 0;
         }
     }
  
-        /** Responsif smartphone **/
+        /* Responsif smartphone */
         @media only screen and (max-width: 375px) {
+            /* Mengatur tinggi pada id nav */
             #nav {
                 height: 640px;
             }
-            /** atur box 1 kolom **/
+            /* Atur lebar dan margin box 1 kolom */
             .box {
                 width: 100%;
                 margin: 0 0 20px 0;
             }
         }
     </style>
+
 </head>
  
 <body>
-
+    <!-- Menambahkan id wrapper --> 
     <div id="wrapper">
-
+        <!-- Menambahkan id header dengan teks h2 --> 
         <div id="header">
             <h2>Header</header>
         </div>
- 
+        <!-- Menambahkan id nav dengan teks h2 --> 
         <div id="nav">
         <h2>Services</h2>
+            <!-- Menambahkan 4 class box dengan teks biasa --> 
             <div class="box">
             BOX 1
             </div>
- 
+            
             <div class="box">
             BOX 2
             </div>
@@ -94,7 +99,7 @@
             BOX 4
             </div>
         </div>
- 
+        <!-- Menambahkan id footer dengan teks h2 --> 
         <div id="footer">
             <h2>Footer</h2>
         </div>
