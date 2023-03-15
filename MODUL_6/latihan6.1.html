@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <!-- Membuat judul dokumen -->
+    <title>Menggunakan Media Query CSS3</title>
+    
+    <!-- Menambahkan style -->
+    <style>
+        /* Pengaturan default display none */
+        .smartphone {
+            display: none;
+        }
+        
+        /* Media query untuk smartphone 375px */
+        @media only screen and (max-width: 375px) {
+            /* Mengatur warna background kuning pada body */
+            body {
+                background-color: yellow;
+            }
+            /* Pengaturan default display block */
+            .smartphone {
+                display: block;
+            }
+        }
+ 
+    </style>
+ 
+</head>
+<body>
+    <!-- Menambahkan teks h3 -->
+    <h3>Menggunakan Media Query CSS3</h3>
+    
+    <!-- Menambahkan class smartphone dengan teks h2 -->
+    <div class="smartphone">
+    <h2>Terdeteksi ukuran smartphone</h2>
+    </div>
+
+</body>
+</html>
