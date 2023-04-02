@@ -55,6 +55,7 @@ body {
   margin-left: auto;
 }
 
+/* Mengatur style pada tag main */
 main {
   color: rgb(4, 4, 4); 
   fill: currentcolor; 
@@ -65,12 +66,14 @@ main {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Mengatur style pada class container.row */
 .container.row {
   display: flex; 
   flex-direction: row; 
   width: 100%;
 }
 
+/* Mengatur style pada tag section */
 section {
   padding-left: 20px; 
   padding-right: 20px; 
@@ -79,28 +82,32 @@ section {
   overflow: visible;
 }
 
+/* Mengatur style pada class panel */
 .panel {
   border: none;
 }
 
+/* Mengatur style pada class panel-default */
 .panel-default {
   width: 100%; 
   border-radius: 3px;
 }
 
+/* Mengatur style pada class panel-body */
 .panel-body {
   width: 100%; 
   max-width: 580px; 
   margin: 0px auto;
 }
 
+/* Mengatur style pada class col-md-12 */
 .col-md-12 {
   display: flex; 
   flex-direction: column; 
   align-items: center;
 }
 
-/* Style for heading */
+/* Mengatur style pada heading */
 h1 {
   font-size: 34px; 
   margin-top: 0; 
@@ -111,6 +118,7 @@ h1 {
   max-width: 380px;
 }
 
+/* Mengatur style pada class notion-login */
 .notion-login {
   width: 100%; 
   display: flex; 
@@ -120,12 +128,14 @@ h1 {
   margin-bottom: 16vh;
 }
 
+/* Mengatur style pada class row*/
 .row {
   display: flex; 
   flex-direction: column; 
   width: 100%;
 }
 
+/* Mengatur style pada class btn-default */
 .btn-default {
   user-select: none; 
   transition: 20ms ease-in 0s; 
@@ -149,6 +159,7 @@ h1 {
   margin-bottom: 8px;
 }
 
+/* Mengatur style pada class btn-default, tag svg */
 .btn-default svg {
   width: 16px; 
   height: 16px; 
@@ -160,6 +171,7 @@ h1 {
   margin-bottom: 2px;
 } 
 
+/* Mengatur style pada class googleLogo */
 .googleLogo{
   width: 14px; 
   height: 14px; 
@@ -170,6 +182,7 @@ h1 {
   margin-right: 6px;
 }
 
+/* Mengatur style pada class appleLogo */
 .appleLogo {
   width: 16px; 
   height: 16px; 
@@ -181,6 +194,7 @@ h1 {
   margin-bottom: 2px;
 }
 
+/* Mengatur style pada class hr */
 .hr {
   display: flex;
   align-items: center;
@@ -189,6 +203,7 @@ h1 {
   flex: 0 0 auto;
 }
 
+/* Mengatur style pada class garis */
 .garis {
   max-width: 91%;
   width: 100%;
@@ -198,10 +213,12 @@ h1 {
   margin-right: auto;
 }
 
+/* Mengatur style pada class form-group */
 .form-group {
   margin-bottom: 4px;
 }
 
+/* Mengatur style pada class form-group, tag label */
 .form-group label {
   text-align: left;
   margin-left: 5%;
@@ -212,6 +229,7 @@ h1 {
   color: rgba(55, 53, 47, 0.65);
 }
 
+/* Mengatur style pada class form-group, tag input email */
 .form-group input[type="email"] {
   display: inline-flex;
   align-items: center;
@@ -229,6 +247,7 @@ h1 {
   border: none;
 }
 
+/* Mengatur style pada class btn-primary */
 .btn-primary {
   user-select: none;
   transition: 20ms ease-in 0s;
@@ -253,14 +272,17 @@ h1 {
   border: none;
 }
 
+/* Mengatur warna ketika kita menaruh kursor di atas btn-primary */
 .btn-primary:hover {
   background-color: rgb(250, 235, 232);
 }
 
+/* Mengatur warna teks ketika kita menaruh kursor di atas btn-primary */
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
   color: rgb(235, 87, 87);
 }
 
+/* Mengatur style pada class text-add */
 .text-add {
   color: rgba(55, 53, 47, 0.65);
   margin-top: 5px; 
@@ -268,16 +290,19 @@ h1 {
   font-size: 14px;
 }
 
+/* Mengatur style pada class notion-link */
 .notion-link {
   color: inherit;
   text-decoration: underline;
   cursor: pointer;
 }
 
+/* Mengatur warna ketika kita menaruh kursor di atas notion-link */
 .notion-link:hover {
   color: rgb(235, 87, 87);
 }
 
+/* Mengatur style pada class text */
 .text {
   text-align: center;
 }
