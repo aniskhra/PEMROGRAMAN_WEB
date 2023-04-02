@@ -1,9 +1,45 @@
-/* Mengatur padding pada navigation bar */
-.navbar-default {
-  background-color: #ffffff;
+/* Mengatur style pada seluruh halaman */
+.notion-app-inner {
+  color: rgb(55, 53, 47);
+  background-color: white;
+  line-height: 1.5;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  -webkit-font-smoothing: auto;
 }
 
-/* Style for logo */
+/* Mengatur style pada navigation bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #fff;
+  border-color: #fff;
+  white-space: nowrap;
+  background: rgb(255, 254, 252);
+  box-shadow: none;
+}
+
+/* Menampilkan garis bawah ketika navbar di scroll */
+.navbar.scrolled {
+  border-bottom: 1px solid #ccc;
+}
+
+/* Mengatur ukuran padding atas pada body */
+body {
+  padding-top: 100px;
+}
+
+/* Mengatur navbar tetap di atas */
+.navbar-fixed-top {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+}
+
+/* Mengatur style logo aplikasi pada navbar */
 .navbar-brand img {
   height: 30px;
   width: fit-content;
@@ -11,108 +47,237 @@
   margin-top: -5px;
 }
 
+/* Mengatur style pada class navbar-default.container */
+.navbar-default.container {
+  padding-right: 15px;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+main {
+  color: rgb(4, 4, 4); 
+  fill: currentcolor; 
+  line-height: 1.5; 
+  font-family: inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; 
+  background: rgb(255, 254, 252); 
+  font-size: 17px; 
+  -webkit-font-smoothing: antialiased;
+}
+
+.container.row {
+  display: flex; 
+  flex-direction: row; 
+  width: 100%;
+}
+
+section {
+  padding-left: 20px; 
+  padding-right: 20px; 
+  width: 100%; 
+  margin: 0px auto; 
+  overflow: visible;
+}
+
+.panel {
+  border: none;
+}
+
+.panel-default {
+  width: 100%; 
+  border-radius: 3px;
+}
+
+.panel-body {
+  width: 100%; 
+  max-width: 580px; 
+  margin: 0px auto;
+}
+
+.col-md-12 {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+}
+
 /* Style for heading */
 h1 {
-    font-size: 50px;
-    margin-top: 12vh;
-    font-weight: 700;
-    text-align: center;
-    
+  font-size: 34px; 
+  margin-top: 0; 
+  font-weight: 700; 
+  margin-bottom: 24px; 
+  text-align: center; 
+  line-height: 1.1; 
+  max-width: 380px;
 }
 
 .notion-login {
-  margin: 5%;
-  display: flex;
-  flex-direction: column;
+  width: 100%; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  max-width: 320px; 
+  margin-bottom: 16vh;
+}
+
+.row {
+  display: flex; 
+  flex-direction: column; 
+  width: 100%;
 }
 
 .btn-default {
-  font-size: 15px; 
-}
-.btn-default svg {
-  vertical-align: middle;
-  margin-right: 3px;
-}
-
-.btn svg {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.btn span {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 5px;
-}
-
-hr {
-  width: 100%; 
-  margin-top: 1%;
-  visibility: visible; 
-  border-top: 1px solid rgba(55, 53, 47, 0.16);
-}
-
-.form-group label {
-  display: block; 
-  margin-bottom: 4px; 
-  font-size: 12px; 
-  color: rgba(55, 53, 47, 0.65);
-  font-weight: lighter;
-}
-
-.form-group input {
-  font-size: 15px; 
-  line-height: 26px; 
-  padding: 4px 10px; 
-  position: relative; 
-  border-radius: 4px; 
-  box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px inset; 
-  background: rgba(242, 241, 238, 0.6); 
-  cursor: text; 
-}
-
-.btn-default.email {
+  user-select: none; 
+  transition: 20ms ease-in 0s; 
   cursor: pointer; 
   display: inline-flex; 
   align-items: center; 
   justify-content: center; 
-  color: rgb(235, 87, 87); 
+  white-space: nowrap; 
+  height: 36px; 
+  border-radius: 4px; 
+  color: rgb(17, 17, 17); 
   font-size: 14px; 
-  background: rgb(253, 245, 242); 
-  box-shadow: rgba(235, 87, 87, 0.3) 0px 0px 0px 1px inset;
-}
-
-.forgot-pw {
-  color: rgba(55, 53, 47, 0.65); 
-  font-size: 14px; 
-  line-height: 1.6; 
-  margin-top: 8px; 
-  margin-bottom: 8px; 
-  text-align: center;
-}
-
-.saml {
-  color: rgba(55, 53, 47, 0.65); 
-  font-size: 14px; 
-  line-height: 1.6; 
-  margin-top: 2px; 
-  margin-bottom: 8px; 
-  text-align: center;
-}
-
-.agreement {
+  line-height: 1; 
+  padding-left: 12px; 
+  padding-right: 12px; 
+  font-weight: 500; 
+  background: white; 
+  border: 1px solid rgba(15, 15, 15, 0.15); 
   width: 100%; 
-  margin-top: 64px; 
-  margin-bottom: 0px; 
-  font-size: 12px; 
-  color: rgba(55, 53, 47, 0.5); 
-  text-align: center;
+  box-shadow: rgba(15, 15, 15, 0.05) 0px 1px 2px; 
+  margin-bottom: 8px;
+}
+
+.btn-default svg {
+  width: 16px; 
+  height: 16px; 
+  display: block; 
+  fill: inherit; 
+  flex-shrink: 0; 
+  backface-visibility: hidden; 
+  margin-right: 6px; 
+  margin-bottom: 2px;
+} 
+
+.googleLogo{
+  width: 14px; 
+  height: 14px; 
+  display: block; 
+  fill: inherit; 
+  flex-shrink: 0; 
+  backface-visibility: hidden; 
+  margin-right: 6px;
+}
+
+.appleLogo {
+  width: 16px; 
+  height: 16px; 
+  display: block; 
+  fill: inherit; 
+  flex-shrink: 0; 
+  backface-visibility: hidden;
+  margin-right: 6px; 
+  margin-bottom: 2px;
+}
+
+.hr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+  flex: 0 0 auto;
+}
+
+.garis {
+  max-width: 91%;
+  width: 100%;
+  border-top: 1px solid rgba(55, 53, 47, 0.16);
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-group {
+  margin-bottom: 4px;
+}
+
+.form-group label {
+  text-align: left;
+  margin-left: 5%;
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: 450;
+  color: rgba(55, 53, 47, 0.65);
+}
+
+.form-group input[type="email"] {
+  display: inline-flex;
+  align-items: center;
+  width: 90%;
+  font-size: 15px;
+  line-height: 26px;
+  padding: 4px 10px;
+  position: relative;
+  border-radius: 4px;
+  box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px inset;
+  background: rgba(242, 241, 238, 0.6);
+  cursor: text;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: none;
+}
+
+.btn-primary {
+  user-select: none;
+  transition: 20ms ease-in 0s;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  height: 36px;
+  border-radius: 4px;
+  color: rgb(235, 87, 87);
+  font-size: 14px;
+  line-height: 1;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-weight: 500;
+  background-color: rgb(253, 245, 242);
+  box-shadow: rgba(15, 15, 15, 0.1) 0px 1px 2px, rgba(235, 87, 87, 0.3) 0px 0px 0px 1px inset;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  width: 90%;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: rgb(250, 235, 232);
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+  color: rgb(235, 87, 87);
+}
+
+.text-add {
+  color: rgba(55, 53, 47, 0.65);
+  margin-top: 5px; 
+  margin-bottom: 5px;
+  font-size: 14px;
 }
 
 .notion-link {
-  display: inline; 
-  text-decoration: underline; 
-  user-select: none; 
-  cursor: pointer; 
   color: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.notion-link:hover {
+  color: rgb(235, 87, 87);
+}
+
+.text {
+  text-align: center;
 }
