@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Membuat judul dokumen -->
     <title>Definisi Fungsi/Prosedur</title>
 </head>
 <body>
 
+<!-- Menambahkan kode PHP -->
 <?php
 // Contoh prosedur
 function do_print() {

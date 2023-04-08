@@ -1,9 +1,12 @@
 !DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Membuat judul dokumen -->
     <title>Definisi Fungsi/Prosedur</title>
 </head>
 <body>
+
+<!-- Menambahkan kode PHP -->
 <?php
 
 /**

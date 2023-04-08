@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Membuat judul dokumen -->
     <title>Casting Tipe</title>
 </head>
 <body>
 
+<!-- Menambahkan kode PHP -->
 <?php
 
+// Deklarasi dan inisialisasi
 $str = '123abc';
 
 // Casting nilai vaiabel $str ke integer
