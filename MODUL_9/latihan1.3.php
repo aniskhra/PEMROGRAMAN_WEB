@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
+    <!-- Membuat judul dokumen -->
     <title>Identifikasi Metode</title>
 </head>
 

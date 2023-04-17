@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!-- Membuat judul dokumen -->
     <title>Data Checkbox</title>
 </head>
 
