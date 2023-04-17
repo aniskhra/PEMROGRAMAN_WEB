@@ -7,9 +7,10 @@
 </head>
 
 <body>
-
+    <!-- Menambahkan pemrosesan form dengan metode POST -->
     <form action="<?php $_SERVER['PHP_SELF'];?>" method="post">
         Hobi
+        <!-- Menambahkan input hobby dengan jenis checkbox yang dapat dipilih lebih dari 1 -->
         <input type="checkbox" name="hobby[]" value="Membaca"
         />Membaca
         
@@ -18,10 +19,11 @@
         
         <input type="checkbox" name="hobby[]" value="Menyanyi"
         />Menyanyi <br />
-        
+        <!-- Menambahkan tombol untuk submit -->
         <input type="submit" value="ok" />
     </form>
 
+<!-- Menambahkan kode PHP -->
 <?php
 
 // Ekstraksi nilai
