@@ -17,7 +17,7 @@
 
 <!-- Menambahkan kode PHP -->
 <?php
-// Jika form diisi nama lalu menekan OK, makan akan muncul pesan Hello, nama
+// Jika form diisi nama lalu menekan OK, maka akan muncul pesan Hello, nama
 if (isset($_GET['nama'])) {
 echo 'Hello, ' . $_POST['nama'];
 }

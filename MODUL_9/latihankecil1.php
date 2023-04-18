@@ -3,7 +3,7 @@
 
 <head>
     <!-- Membuat judul dokumen -->
-    <title>Metode GET</title>
+    <title>Metode GET dengan $_POST</title>
 </head>
 
 <body>
@@ -17,9 +17,9 @@
 
 <!-- Menambahkan kode PHP -->
 <?php
-// Jika form diisi nama lalu menekan OK, maka akan muncul pesan Hello, nama
-if (isset($_GET['nama'])) {
-echo 'Hello, ' . $_GET['nama'];
+// Jika form diisi nama lalu menekan OK, maka tidak akan muncul pesan Hello, nama karena superglobal tidak sesuai dengan metodenya
+if (isset($_POST['nama'])) {
+echo 'Hello, ' . $_POST['nama'];
 }
 ?>
 
