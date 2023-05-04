@@ -1,19 +1,23 @@
 <?php
+    // Memulai session
     session_start();
+    // Mengecek apakah tombol login telah ditekan
     if (isset($_POST['login'])){ 
+        // Mengambil nilai username dan password dari form login
         $user = $_POST['user'];
         $pass = $_POST['pass'];
-        //periksa login
+        // Periksa login
             if ($user == "anis" && $pass="1111") {
-                //menciptakan session
+                // Jika berhasil login, maka menciptakan session
                 $_SESSION['login'] = $user;
-                //menuju ke halaman pemeriksaan session
+                // Menuju ke halaman pemeriksaan session
                 echo "<h1>Halo, kamu berhasil login!</h1>";
                 echo "<h2>Klik <a href='session2.php'> disini (session2.php)</a> untuk menuju ke halaman 
                 pemeriksaan session</h2>";
-            } //bisa ditambahkan kondisi jika gagal login disini
+            } // Bisa ditambahkan kondisi jika gagal login disini
         }
         else {
+            // Jika tombol login belum ditekan, maka form login akan ditampilkan
             ?>
             <html>
                 <head>
