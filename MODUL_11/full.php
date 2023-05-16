@@ -52,7 +52,7 @@
             <td>
             <a href="lihat.php?nim=<?php echo $d['nim']; ?>">Lihat</a>
             <a href="edit.php?nim=<?php echo $d['nim']; ?>">Edit</a>
-            <a onclick="return confirm('Apakah anda yakin mau menghapus data? <?= $d['nim'] ?>');" href="hapus.php?nim=<?php echo $d['nim']; ?>">Hapus</a>
+            <a href="hapus.php?nim=<?php echo $d['nim']; ?>">Hapus</a>
             </td>
         </tr>
         <?php
