@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Membuat judul dokumen -->
+    <title>Kalkulatorku</title>
+    <!-- Menautkan link file styling css -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- Menautkan link file javascript -->
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main"> 
+            <div class="header">
+                <!-- Menambahkan form input radio untuk mengganti warna background halaman -->
+                <form name="go" align="center">
+                    <input type="radio" name="C1" 
+                        onclick="document.bgColor='lightblue'">
+                    <input type="radio" name="C1" 
+                        onclick="document.bgColor='lightgrey'">
+                </form>
+            </div>
+            <!-- Menambahkan judul di atas halaman -->
+            <h2>Kalkulatorku</h2>
+            
+            <!-- Menambahkan display layar kalkulator dengan nilai awal 0 -->
+            <div class="display">
+                <p id="output">0</p>
+            </div>
+
+            <!-- Menambahkan row pertama pada kalkulator dan mengatur atributnya -->
+            <div class="first-row">
+                <button id="r1-1" style="width: 138px;" onclick="clearOutput()">C</button>
+                <button id="r1-3" onclick="perc()">%</button>
+                <button id="r1-4" onclick="fordisplay('/')">/</button>
+            </div>
+
+            <!-- Menambahkan row kedua pada kalkulator dan mengatur atributnya -->
+            <div class="second-row">
+                <button id="r2-1" onclick="fordisplay('7')">7</button>
+                <button id="r2-2" onclick="fordisplay('8')">8</button>
+                <button id="r2-3" onclick="fordisplay('9')">9</button>
+                <button id="r2-4" onclick="fordisplay('*')">x</button>
+            </div>
+
+            <!-- Menambahkan row ketiga pada kalkulator dan mengatur atributnya -->
+            <div class="third-row">
+                <button id="r3-1" onclick="fordisplay('4')">4</button>
+                <button id="r3-2" onclick="fordisplay('5')">5</button>
+                <button id="r3-3" onclick="fordisplay('6')">6</button>
+                <button id="r3-4" onclick="fordisplay('-')">-</button>
+            </div>
+
+            <!-- Menambahkan row keempat pada kalkulator dan mengatur atributnya -->
+            <div class="fourth-row">
+                <button id="r4-1" onclick="fordisplay('1')">1</button>
+                <button id="r4-2" onclick="fordisplay('2')">2</button>
+                <button id="r4-3" onclick="fordisplay('3')">3</button>
+                <button id="r4-4" onclick="fordisplay('+')">+</button>
+            </div>
+
+            <!-- Menambahkan row kelima pada kalkulator dan mengatur atributnya -->
+            <div class="fifth-row">
+                <button id="r5-1" style="width: 139px;" onclick="fordisplay('0')">0</button>
+                <button id="r5-2" onclick="fordisplay('.')">.</button>
+                <button id="r5-3" onclick="solve()">=</button>
+            </div>
+        </div><br/>
+        <!-- Menambahkan tombol untuk melihat informasi -->
+        <input type="button" name="info" value="Info" onclick="info()">
+    </div>
+</body>
+</html>
