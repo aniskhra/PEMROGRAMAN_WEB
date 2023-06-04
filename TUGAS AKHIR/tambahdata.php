@@ -41,7 +41,7 @@ if(isset($_POST['submit'])){
     <style>
         body {
             background-color: #f2f2f2;
-            font-family: Arial, sans-serif;
+            font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
             padding: 30px;
         }
 

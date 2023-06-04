@@ -30,7 +30,7 @@ if(isset($_GET['id'])){
             <!-- Styling menggunakan CSS -->
             <style>
                 body {
-                    font-family: Arial, sans-serif;
+                    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
                     margin: 0;
                     padding: 30px;
                 }

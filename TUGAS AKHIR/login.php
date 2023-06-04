@@ -47,9 +47,27 @@ if(isset($_POST['login'])){
     <style>
         body {
             background-color: #f2f2f2;
-            font-family: Arial, sans-serif;
+            font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
             margin: 0;
             padding: 0;
+        }
+
+        .header {
+            display: flex;
+        }
+
+        img {
+            margin-top: 10px;
+            margin-left: 30px;
+            width: 40px;
+            height: 40px;
+        }
+
+        .school-name {
+           margin-top: 20px;
+           margin-left: 12px;
+           color: black;
+           font-weight: bold;
         }
 
         .login-box {
@@ -69,14 +87,21 @@ if(isset($_POST['login'])){
 
         .login-box .user-box {
             position: relative;
+        }
 
+        .show-password {
+            position: absolute;
+            right: 3px;
+            top: 40%;
+            transform: translateY(-50%);
+            cursor: pointer;
         }
 
         .login-box .user-box input {
             border: 1px solid #ccc;
             border-radius: 4px;
             font-size: 14px;
-            padding-top: 25px;
+            padding-top: 27px;
             padding-left: 10px;
             padding-bottom: 10px;
             width: 95%;
@@ -147,10 +172,30 @@ if(isset($_POST['login'])){
                 return false;
             }
         }
+
+        function togglePasswordVisibility() {
+            var passwordInput = document.getElementById("password");
+            var passwordVisibility = document.getElementsByClassName("show-password")[0];
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                passwordVisibility.innerHTML = "<img src='open-eye.png' alt='Open Eye'>";
+            } else {
+                passwordInput.type = "password";
+                passwordVisibility.innerHTML = "<img src='closed-eye.png' alt='Closed Eye'>";
+            }
+        }
+
+
     </script>
 </head>
 <body>
 
+    <!-- Membuat class untuk menambahkan logo dan nama sekolah -->
+    <div class="header">
+        <img src="logo.png" alt="logo">
+        <a class="school-name">SMA HARAPAN BANGSA</a>
+    </div>
     <!-- Membuat class login box -->
     <div class="login-box">
         <!-- Menambahkan judul -->
@@ -171,6 +216,9 @@ if(isset($_POST['login'])){
             <div class="user-box">
                 <input type="password" name="password" id="password">
                 <label for="password">Password</label>
+                <span class="show-password" onclick="togglePasswordVisibility()">
+                    <img src="closed-eye.png" alt="Closed Eye">
+                </span>
             </div>
             <!-- Menambahkan tombol login -->
             <input class="submit-button" type="submit" name="login" value="Login">
