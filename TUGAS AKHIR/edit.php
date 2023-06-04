@@ -94,7 +94,9 @@ if(isset($_GET['id'])){
             </style>
         </head>
         <body>
+             <!-- Menambahkan judul -->
             <h1>Edit Data Siswa</h1>
+             <!-- Menambahkan form -->
             <form action="update.php?id=<?php echo $siswa['nisn']; ?>" method="POST">
                 <input type="hidden" name="id" value="<?php echo $siswa['nisn']; ?>">
                 <label for="nama">Nama:</label>
@@ -103,7 +105,8 @@ if(isset($_GET['id'])){
                 <input type="text" name="jenis_kelamin" id="jenis_kelamin" value="<?php echo $siswa['jenis_kelamin']; ?>"><br>
                 <label for="alamat">Alamat:</label>
                 <input type="text" name="alamat" id="alamat" value="<?php echo $siswa['alamat']; ?>"><br>
-                <input type="submit" value="Simpan">    
+                <input type="submit" value="Simpan"> 
+                <!-- Menambahkan tombol untuk kembali ke dashboard -->   
                 <a href="dashboard.php">Kembali</a>
             </form>
             

@@ -178,6 +178,7 @@ if(isset($_GET['logout'])){
                         <td><?php echo $row['jenis_kelamin']; ?></td>
                         <td><?php echo $row['alamat']; ?></td>
                         <td>
+                            <!-- Menambahkan tombol untuk lihat, edit dan hapus data -->
                             <a class="btn btn-outline-primary" href="lihat.php?id=<?php echo $row['nisn']; ?>">Lihat</a>
                             <a class="btn btn-outline-primary" href="edit.php?id=<?php echo $row['nisn']; ?>">Edit</a>
                             <a class="btn btn-outline-primary" href="hapus.php?id=<?php echo $row['nisn']; ?>" onclick="return confirmDelete()">Hapus</a>
@@ -187,6 +188,7 @@ if(isset($_GET['logout'])){
                 } 
                 ?>
             </table>
+             <!-- Menambahkan tombol untuk tambah data -->
             <a href="tambahdata.php" class="btn btn-primary mb-3">Tambah Data</a>
         </div>
     </div>

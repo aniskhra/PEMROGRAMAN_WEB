@@ -73,7 +73,9 @@ if(isset($_GET['id'])){
             </style>
         </head>
         <body>
+             <!-- Menambahkan judul -->
             <h1>Detail Data Siswa</h1>
+             <!-- Menambahkan tabel -->
             <table>
                 <tr>
                     <th>NISN</th>
@@ -92,6 +94,7 @@ if(isset($_GET['id'])){
                     <td><?php echo $siswa['alamat']; ?></td>
                 </tr>
             </table>
+            <!-- Menambahkan tombol untuk kembali ke dashboard -->
             <a href="dashboard.php">Kembali</a>
         </body>
         </html>

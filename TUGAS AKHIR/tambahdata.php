@@ -38,6 +38,8 @@ if(isset($_POST['submit'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tambah Data Siswa</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Styling menggunakan CSS -->
     <style>
         body {
             background-color: #f2f2f2;
@@ -85,7 +87,9 @@ if(isset($_POST['submit'])){
 </head>
 <body>
     <div class="container">
+        <!-- Menambahkan judul -->
         <h2 class="title">Tambah Data Siswa</h2>
+        <!-- Menambahkan form -->
         <form method="POST" action="">
             <div class="form-group">
                 <label for="nisn">NISN</label>
@@ -106,7 +110,9 @@ if(isset($_POST['submit'])){
                 <label for="alamat">Alamat</label>
                 <textarea class="form-control" id="alamat" name="alamat" rows="3" required></textarea>
             </div>
+            <!-- Menambahkan tombol untuk untuk menyimpan data yang ingin ditambahkan -->
             <button type="submit" name="submit" class="btn btn-primary">Simpan</button>
+            <!-- Menambahkan tombol batal yang akan mengarahkan kembali ke dashboard -->
             <a href="dashboard.php" class="btn btn-secondary">Batal</a>
         </form>
     </div>

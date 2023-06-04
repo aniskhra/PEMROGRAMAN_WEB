@@ -173,6 +173,7 @@ if(isset($_POST['login'])){
             }
         }
 
+        // fungsi untuk visibility password
         function togglePasswordVisibility() {
             var passwordInput = document.getElementById("password");
             var passwordVisibility = document.getElementsByClassName("show-password")[0];
@@ -186,12 +187,11 @@ if(isset($_POST['login'])){
             }
         }
 
-
     </script>
 </head>
 <body>
 
-    <!-- Membuat class untuk menambahkan logo dan nama sekolah -->
+    <!-- Membuat class header untuk menambahkan logo dan nama sekolah -->
     <div class="header">
         <img src="logo.png" alt="logo">
         <a class="school-name">SMA HARAPAN BANGSA</a>
